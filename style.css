@@ -1,0 +1,105 @@
+*{ /* обнуляем все стили */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* подключение шрифта  Proxima Nova*/
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("./font/proximanova_regular.ttf");
+}
+
+/* назначаем шрифт для всего тела */
+body {
+    font-family: "Proxima Nova", sans-serif;
+    background-color: #162831;
+    width: 1296px;
+    margin: auto;
+}
+
+/* назначаем шрифт для всех заголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "El Messiri", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul a {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+header button {
+    background-color: #018ABE;
+    border-radius: 3px;
+    padding: 9px 15px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+header button:hover {
+    transition: filter .1s linear;
+    filter: brightness(110%);
+}
+
+/* стили для main */
+main {
+    margin-top: 20px;
+}
+
+.first_screen {
+    height: 600px;
+    background: url("./img/bg.jpg");
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color: #98C9DC80;
+    background-position: 0 -140px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 136px;
+    color: #FFFFFF;
+}
+
+.first_screen h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.first_screen h2::before {
+    content: url("./img/petal-white.svg");
+    margin-right: 66px;
+}
+
+.first_screen h2::after {
+    content: url("./img/petal-white.svg");
+    display: inline-block;
+    transform: scale(-1, 1);
+    margin-left: 66px;
+}
+
+.first_screen h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 90px;
+}
